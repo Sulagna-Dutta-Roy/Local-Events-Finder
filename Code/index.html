@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Finder with Mapbox</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Mapbox CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Event Finder Tool</h1>
+  </header>
+  <main>
+
+    <section class="search-form">
+      <input type="text" id="location" placeholder="Enter location">
+      <input type="date" id="date">
+      <button id="toggle-map-btn">Show Map</button>
+      <div id="map" style="display:none;"></div>  <!-- Initially hidden -->
+      <button id="search-btn">Search Events</button>
+    </section>
+    <section id="results">
+      <div id="map"></div>
+      <div id="events-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Event Finder</p>
+  </footer>
+  <!-- Mapbox JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
